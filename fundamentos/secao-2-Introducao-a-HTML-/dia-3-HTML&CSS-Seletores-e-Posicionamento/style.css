@@ -1,43 +1,57 @@
-div:hover {
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-of-type(even) {
+    color: green;
+}
+
+ol li:nth-of-type(odd) {
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    color: red;
+}
+
+h1 em, h2 em {
+    font-size: 40px;
     border: 1px solid black;
 }
 
-div:nth-of-type(1){
-    background-color: red;
+li {
+    font-size: 20px;
 }
-div:nth-of-type(2){
+
+li em {
+    font-weight: 600;
+}
+
+#linguagens li:not(:nth-child(n + 4)) {
+    color: blue;
+}
+
+.pink-bg {
+    background-color: pink;
+}
+
+ul.link li {
+    font-weight: 600;
+}
+
+ul.link li:hover:nth-of-type(1){
+    background-color: orange;
+}
+ul.link li:hover:nth-of-type(2){
     background-color: green;
 }
-div:nth-of-type(3){
+ul.link li:hover:nth-of-type(3){
+    background-color: black;
+}
+ul.link li:hover:nth-of-type(4){
     background-color: yellow;
 }
-div:nth-of-type(4){
-    background-color: gray;
-}
-div:nth-of-type(5){
-    background-color: lightblue;
+ul.link li:hover:nth-of-type(5){
+    background-color: green;
 }
 
-div:nth-of-type(1) > h3 {
-    color: purple;
-}
-div:nth-of-type(2) > h3 {
-    color: red 
-  }
-  div:nth-of-type(3) > h3 {
-    font-size: 20px;
-  }
-  div:nth-of-type(4) > h3 {
-    font-family: monospace;
-  }
-  div:nth-of-type(5) > h3 {
-    font-style: italic
-  }
-
-  div:nth-of-type(3){
-    height: 100px;
-  }
-
-div:nth-of-type(odd) h3 {
-    font-style: italic;
-}
