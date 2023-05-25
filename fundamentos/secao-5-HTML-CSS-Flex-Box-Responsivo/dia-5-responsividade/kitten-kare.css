@@ -94,3 +94,28 @@
         width: 300px;
     }
   }
+  
+  @media screen and (max-width: 600px) {
+    main {
+        position: relative;
+    }
+    #aside {
+        display: none;
+    }
+    img {
+        max-width: 100vw;
+    }
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header {
+        position: fixed;
+        width: 100vw;
+        height: 75px;
+    }
+    #navigation {
+        padding-top: 75px;
+    }
+  }
